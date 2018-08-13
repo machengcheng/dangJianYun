@@ -1,0 +1,78 @@
+@charset "UTF-8";
+
+
+$hidden: none!important;
+
+/**
+ ＊公共样式变量(padding填充为0)
+ */
+$padding0: 0;
+$paddingTop0: 0;
+$paddingBottom0: 0;
+$paddingRight0: 0;
+$paddingLeft0: 0;
+$withAuto: auto;
+$paddingTop20: 20px;
+$padding5: 5px;
+$padding10: 10px;
+$padding15: 15px;
+$padding20: 20px;
+
+/**
+ * 公共样式变量(margin边界为0)
+ */
+$margin0: 0;
+$marginTop0: 0;
+$marginBottom0: 0;
+$marginLeft0: 0;
+
+$marginRight0: 0;
+$marginRight5: 5px;
+$marginRight10: 10px;
+$marginRight20: 20px;
+$marginRight30: 30px;
+
+$marginLeft5: 5px;
+$marginLeft10: 10px;
+$marginLeft15: 15px;
+$marginLeft20: 20px;
+$marginLeft30: 30px;
+
+$marginTop5: 5px;
+$marginTop10: 10px;
+$marginTop15: 15px;
+$marginTop20: 20px;
+
+$marginBottom5: 5px;
+$marginBottom10: 10px;
+$marginBottom15: 15px;
+$marginBottom20: 20px;
+/**
+ * 公共样式变量(border为0)
+ */
+$border0: 0;
+$borderTop0: 0;
+$borderBottom0: 0;
+$borderLeft0: 0;
+$borderRight0: 0;
+
+/**
+ * 公共样式变量(对齐)
+ */
+$textAlignLeft: left;
+$textAlignRight: right;
+$textAlignCenter: center;
+$floatRight: right;
+$floatLeft: left;
+
+/**
+ * 公共样式变量
+ */
+$inlineBlock: inline-block;
+
+/**
+ * 首页公共样式变量
+ */
+$homeAsideBg: #141F2E;   //背景颜色(框架Aside背景)
+$homeHeaderBg: #141F2E;  //背景颜色(框架Header背景)
+$menuBgColor: #545c64;   //菜单item默认背景颜色

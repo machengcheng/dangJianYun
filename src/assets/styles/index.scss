@@ -1,0 +1,279 @@
+@import "./variables";
+
+html, body {
+	padding: 0;
+	margin: 0;
+	height: 100%;
+}
+#app {
+    font-family: Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	color: #2c3e50;
+	height: 100%;
+}
+
+div, ul, ol, li, img {
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+
+ul, li {
+	list-style-type: none;
+}
+
+.hidden-xs,
+.hidden-sm,
+.hidden-md,
+.hidden-lg {
+    display: $hidden;
+}
+
+.p0 {
+	padding: $padding0;
+}
+
+.p5 {
+    padding: $padding5;
+}
+
+.p10 {
+    padding: $padding10;
+}
+
+.p15 {
+    padding: $padding15;
+}
+
+.p20 {
+    padding: $padding20;
+}
+
+.pt0 {
+	padding-top: $paddingTop0;
+}
+
+.ptb0 {
+	padding-bottom: $paddingBottom0;
+}
+
+.ptr0 {
+	padding-right: $paddingRight0;
+}
+
+.ptl0 {
+	padding-left: $paddingLeft0;
+}
+
+.mr0 {
+	margin-right: $marginRight0!important;
+}
+
+.mr5 {
+	margin-right: $marginRight5!important;
+}
+
+.mr10 {
+	margin-right: $marginRight10!important;
+}
+
+.mr20 {
+	margin-right: $marginRight20!important;
+}
+
+.mr30 {
+	margin-right: $marginRight30!important;
+}
+
+.ml5 {
+	margin-left: $marginLeft5!important;
+}
+
+.ml10 {
+	margin-left: $marginLeft10!important;
+}
+
+.ml15 {
+	margin-left: $marginLeft15!important;
+}
+
+.ml20 {
+	margin-left: $marginLeft20!important;
+}
+
+.ml30 {
+	margin-left: $marginLeft30!important;
+}
+
+.mt5 {
+	margin-top: $marginTop5!important;
+}
+
+.mt10 {
+	margin-top: $marginTop10!important;
+}
+
+.mt15 {
+	margin-top: $marginTop15!important;
+}
+
+.mt20 {
+	margin-top: $marginTop20!important;
+}
+
+.mb5 {
+	margin-bottom: $marginBottom5!important;
+}
+
+.mb10 {
+	margin-bottom: $marginBottom10!important;
+}
+
+.mb15 {
+	margin-bottom: $marginBottom15!important;
+}
+
+.mb20 {
+	margin-bottom: $marginBottom20!important;
+}
+
+.al {
+	text-align: $textAlignLeft;
+}
+
+.ar {
+	text-align: $textAlignRight;
+}
+
+.ac {
+	text-align: $textAlignCenter;
+}
+
+.pt20 {
+    padding-top: $paddingTop20!important;
+}
+
+.fr {
+	float: $floatRight;
+}
+
+.fl {
+	float: $floatLeft;
+}
+
+.wat {
+    width: $withAuto!important;
+}
+
+.clear {
+	clear: both;
+}
+
+.vm {
+	position: absolute;
+	top: 50%;
+	right: auto;
+	transform: translateX(-50%) translateY(-50%);
+}
+
+.inlineBlock {
+	display: $inlineBlock;
+}
+
+
+.common-top {
+    width: 100%;
+    height: 80px;
+    background: #fff;
+    position: relative;
+    .common-label {
+        width: 1100px;
+        margin: 0 auto;
+        .common-label-text {
+            display: inline-block;
+            width: 200px;
+            position: relative;
+            top: -17px;
+            font-weight: bold;
+        }
+        .operation-btn {
+            position: relative;
+            top: 30px;
+        }
+        .search-bar {
+            width: 36%;
+            position: relative;
+            top: -34px;
+            left: 150px;
+        }
+        img {
+            display: inline-block;
+        }
+        .logo_left {
+            width: 80px;
+            height: 80px;
+        }
+        .logo_right {
+            width: 180px;
+            height: 60px;
+        }
+    }
+}
+
+/**
+ * PageHome.vue样式开始
+ */
+//.homeOuterContainer {
+//	height: 100%;
+//}
+//.homeAside {
+//	width: 220px!important;
+//	min-width: 220px!important;
+//	background: #29333D;
+//	position: relative;
+//	.homeAsideInner {
+//		position: relative;
+//		height: 100%;
+//		.el-menu {
+//			height: 100%;
+//		}
+//	}
+//}
+//.homeHeader {
+//	min-width: 1280px;
+//	height: 70px!important;
+//	line-height: 70px!important;
+//	text-align: left;
+//	position: relative;
+//	font-size: 14px;
+//	background: #29333D;
+//	background-image: -moz-linear-gradient(top, #29333D, #29333D); /* Firefox */
+//	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #29333D), color-stop(1, #29333D)); /* Saf4+, Chrome */
+//	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#29333D', endColorstr='#29333D', GradientType='0'); /* IE*/
+//}
+//.homeMain {
+//	width: 100%;
+//	min-width: 1060px;
+//	overflow-y: scroll;
+//	position: relative;
+//	padding: 0!important;
+//	.homeMainInner {
+//		min-height: 100%;
+//		//position: absolute;
+//		//top: 50%;
+//		//left: 50%;
+//		//transform: translateX(-50%) translateY(-50%);
+//	}
+//	.homeMainFooter {
+//		width: 100%;
+//		height: 50px;
+//		line-height: 50px;
+//		text-align: center;
+//		font-size: 12px;
+//		background: #EEEEEE;
+//	}
+//}
+/**
+ * PageHome.vue样式结束
+ */
