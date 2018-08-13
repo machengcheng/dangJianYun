@@ -92,6 +92,41 @@ export default [
                         }
                     },
                     {
+                        path: 'xiangZhengKaoPin',
+                        name: '轮战监管-乡镇考评打分 ',
+                        component: resolve => require(['views/lunZhanJianGuan/XiangZhengKaoPin.vue'], resolve),
+                        meta: {
+                            title: '我的工作-乡镇考评打分'
+                        },
+                        redirect: '/home/lunZhanJianGuan/xiangZhengKaoPin/currentCheck',
+                        children:[
+                            {
+                                path: 'currentCheck',
+                                name: '轮战监管-本月考评 ',
+                                component: resolve => require(['views/lunZhanJianGuan/XiangZhengKaoPingCurrent.vue'], resolve),
+                                meta: {
+                                    title: '我的工作-本月考评'
+                                },
+                            },
+                            {
+                                path: 'waitCheck',
+                                name: '轮战监管-待评分标题 ',
+                                component: resolve => require(['views/lunZhanJianGuan/XiangZhengKaoPingWait.vue'], resolve),
+                                meta: {
+                                    title: '我的工作-待评分标题'
+                                },
+                            },
+                        ]
+                    },
+                    {
+                        path: 'xieZuoHuzhu',
+                        name: '轮战监管-协作互助 ',
+                        component: resolve => require(['views/lunZhanJianGuan/XieZuoHuZhu.vue'], resolve),
+                        meta: {
+                            title: '我的工作-协作互助'
+                        }
+                    },
+                    {
                         path: 'zhuCunZhiDao',
                         name: '轮战监管-驻村指导 ',
                         component: resolve => require(['views/lunZhanJianGuan/ZhuCunZhiDao.vue'], resolve),

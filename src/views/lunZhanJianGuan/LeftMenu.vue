@@ -57,10 +57,10 @@
                     <span slot="title">日志</span>
                 </el-menu-item>
             </el-submenu>
-            <el-menu-item index="/3m" key="/3m">
+            <el-menu-item index="/home/lunZhanJianGuan/xiangZhengKaoPin" key="/home/lunZhanJianGuan/xiangZhengKaoPin">
                 <span slot="title">乡镇考评打分</span>
             </el-menu-item>
-            <el-menu-item index="/4m" key="/4m">
+            <el-menu-item index="/home/lunZhanJianGuan/xieZuoHuzhu" key="/home/lunZhanJianGuan/xieZuoHuzhu">
                 <span slot="title">协作互助</span>
             </el-menu-item>
             <el-menu-item index="/home/lunZhanJianGuan/zhuCunZhiDao" key="/home/lunZhanJianGuan/zhuCunZhiDao">

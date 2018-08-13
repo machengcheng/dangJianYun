@@ -11,7 +11,11 @@ html, body {
 	-moz-osx-font-smoothing: grayscale;
 	color: #2c3e50;
 	height: 100%;
+    font-size:14px;
 }
+/*万能清除浮动法*/
+.clear1{zoom:1;height:auto!important}
+.clear1:after{content:"";clear:both;display:block;}
 
 div, ul, ol, li, img {
 	padding: 0;
