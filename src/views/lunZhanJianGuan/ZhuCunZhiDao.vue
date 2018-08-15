@@ -24,7 +24,7 @@
                     </el-form>
                 </div>
                 <p class="help" style="color:rgba(72,135,208,1);">没有满意的答案 ？在下方提交问题</p>
-                <div class="help-c2 clear1">
+                <div class="help-c2 help clear1">
                     <el-form :model="form2" class="demo-form-inline">
                         <el-input
                             type="textarea"

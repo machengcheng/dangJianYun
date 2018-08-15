@@ -135,6 +135,58 @@ export default [
                         }
                     }
                 ]
+            },
+            {
+                path: 'renCaiZhiTong',
+                name: '人才直通车',
+                component: resolve => require(['views/renCaiZhiTong/RenCaiZhiTong.vue'], resolve),
+                meta: {
+                    title: '人才直通车'
+                },
+                redirect: '/renCaiGongGao',
+                hidden: true,
+                children: [
+                    {
+                        path: '/renCaiGongGao',
+                        name: '人才直通-公告 ',
+                        component: resolve => require(['views/renCaiZhiTong/RenCaiGongGao.vue'], resolve),
+                        meta: {
+                            title: '人才直通-公告'
+                        }
+                    },
+                    {
+                        path: 'zhengCe',
+                        name: '人才直通-政策 ',
+                        component: resolve => require(['views/renCaiZhiTong/RenCaiZhengCe.vue'], resolve),
+                        meta: {
+                            title: '人才直通-政策'
+                        }
+                    },
+                    {
+                        path: 'suQiu',
+                        name: '人才直通-诉求 ',
+                        component: resolve => require(['views/renCaiZhiTong/RenCaiSuQiu.vue'], resolve),
+                        meta: {
+                            title: '人才直通-诉求'
+                        }
+                    },
+                    {
+                        path: 'xiangMuShengBao',
+                        name: '人才直通-项目申报 ',
+                        component: resolve => require(['views/renCaiZhiTong/XiangMuShengBao.vue'], resolve),
+                        meta: {
+                            title: '人才直通-项目申报'
+                        }
+                    },
+                    {
+                        path: 'guaZhiGanBu',
+                        name: '人才直通-挂职信息 ',
+                        component: resolve => require(['views/renCaiZhiTong/GuaZhiGanBu.vue'], resolve),
+                        meta: {
+                            title: '人才直通-挂职信息'
+                        }
+                    },
+                ]
             }
         ]
     },
