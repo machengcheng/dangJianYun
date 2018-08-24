@@ -187,6 +187,222 @@ export default [
                         }
                     },
                 ]
+            },
+            {
+                path: 'eHome',
+                name: '党群E家',
+                component: resolve => require(['views/dangQunEjia/Index.vue'], resolve),
+                meta: {
+                    title: '党群E家'
+                },
+                redirect: '/policyFile',
+                hidden: true,
+                children: [
+                    {
+                        path: '/policyFile',
+                        name: '党群E家-政策文件 ',
+                        component: resolve => require(['views/dangQunEjia/ZhengCeWenJian.vue'], resolve),
+                        meta: {
+                            title: '党群E家-政策文件'
+                        }
+                    },
+                    {
+                        path: 'groupDemand',
+                        name: '党群E家-群众需求 ',
+                        component: resolve => require(['views/dangQunEjia/QunZhongXuQiu.vue'], resolve),
+                        meta: {
+                            title: '党群E家-群众需求'
+                        }
+                    },
+                    {
+                        path: 'suggest',
+                        name: '党群E家-意见建议 ',
+                        component: resolve => require(['views/dangQunEjia/YiJianJianYi.vue'], resolve),
+                        meta: {
+                            title: '党群E家-意见建议'
+                        }
+                    },
+                    {
+                        path: 'report',
+                        name: '党群E家-12380举报 ',
+                        component: resolve => require(['views/dangQunEjia/Jubao.vue'], resolve),
+                        meta: {
+                            title: '党群E家-12380举报'
+                        }
+                    },
+                    {
+                        path: 'voteManger',
+                        name: '党群E家-投票管理 ',
+                        component: resolve => require(['views/dangQunEjia/TouPiaoGuanLi.vue'], resolve),
+                        meta: {
+                            title: '党群E家-投票管理'
+                        }
+                    },
+                    {
+                        path: 'pageSurver',
+                        name: '党群E家-问卷调查 ',
+                        component: resolve => require(['views/dangQunEjia/WenJuanDiaoCha.vue'], resolve),
+                        meta: {
+                            title: '党群E家-问卷调查'
+                        }
+                    },
+                    {
+                        path: 'peopleCamera',
+                        name: '党群E家-党员随手拍 ',
+                        component: resolve => require(['views/dangQunEjia/DangYuanSuiPai.vue'], resolve),
+                        meta: {
+                            title: '党群E家-党员随手拍'
+                        }
+                    },
+                    {
+                        path: 'liveAnswer',
+                        name: '党群E家-在线答疑',
+                        component: resolve => require(['views/dangQunEjia/ZaiXianDaYi.vue'], resolve),
+                        meta: {
+                            title: '党群E家-在线答疑'
+                        }
+                    },
+                    {
+                        path: 'proplePipe',
+                        name: '党群E家-民生通道',
+                        component: resolve => require(['views/dangQunEjia/MingShengTongDao.vue'], resolve),
+                        meta: {
+                            title: '党群E家-民生通道'
+                        }
+                    },
+                    {
+                        path: 'groupLife',
+                        name: '党群E家-三会一课',
+                        component: resolve => require(['views/dangQunEjia/ZuZhiShengHuo.vue'], resolve),
+                        meta: {
+                            title: '党群E家-三会一课'
+                        }
+                    },
+                    {
+                        path: 'activeZuZhi',
+                        name: '党群E家-活动组织',
+                        component: resolve => require(['views/dangQunEjia/HuoDongZuZhi.vue'], resolve),
+                        meta: {
+                            title: '党群E家-活动组织'
+                        }
+                    },
+                    {
+                        path: 'activeFaQi',
+                        name: '党群E家-活动发起',
+                        component: resolve => require(['views/dangQunEjia/HuoDongFaQi.vue'], resolve),
+                        meta: {
+                            title: '党群E家-活动发起'
+                        }
+                    },
+                    {
+                        path: 'activeTiJiao',
+                        name: '党群E家-活动提交',
+                        component: resolve => require(['views/dangQunEjia/HuoDongTiJiao.vue'], resolve),
+                        meta: {
+                            title: '党群E家-活动提交'
+                        }
+                    },
+                    {
+                        path: 'remoteSupervise',
+                        name: '党群E家-远程监督',
+                        component: resolve => require(['views/dangQunEjia/YuanChengJianDu.vue'], resolve),
+                        meta: {
+                            title: '党群E家-远程监督'
+                        }
+                    },
+                    {
+                        path: 'news',
+                        name: '党群E家-详情',
+                        component: resolve => require(['views/dangQunEjia/EHomeNews.vue'], resolve),
+                        meta: {
+                            title: '党群E家-详情'
+                        }
+                    },
+                ]
+            },
+            {
+                path: 'zhiNeng',
+                name: '智能调度台',
+                component: resolve => require(['views/zhiNengDiaoDu/Index.vue'], resolve),
+                meta: {
+                    title: '智能调度台'
+                },
+                redirect: '/gongZuoDiaoDu',
+                hidden: true,
+                children: [
+                    {
+                        path: '/gongZuoDiaoDu',
+                        name: '智能调度台-工作调度 ',
+                        component: resolve => require(['views/zhiNengDiaoDu/GongZuoDiaoDu.vue'], resolve),
+                        meta: {
+                            title: '智能调度台-工作调度'
+                        }
+                    },
+                    {
+                        path: 'GongWenJieShou',
+                        name: '智能调度台-公文接收 ',
+                        component: resolve => require(['views/zhiNengDiaoDu/GongWenJieShou.vue'], resolve),
+                        meta: {
+                            title: '智能调度台-公文接收'
+                        }
+                    },
+                    {
+                        path: 'GongWenXiaFa',
+                        name: '智能调度台-公文下发 ',
+                        component: resolve => require(['views/zhiNengDiaoDu/GongWenXiaFa.vue'], resolve),
+                        meta: {
+                            title: '智能调度台-公文下发'
+                        }
+                    },
+                    {
+                        path: 'XiaFaGongWen',
+                        name: '智能调度台-下发公文 ',
+                        component: resolve => require(['views/zhiNengDiaoDu/XiaFaGongWen.vue'], resolve),
+                        meta: {
+                            title: '智能调度台-下发公文'
+                        }
+                    },
+                    {
+                        path: 'baoBiaoJieShou',
+                        name: '智能调度台-报表接收 ',
+                        component: resolve => require(['views/zhiNengDiaoDu/BaoBiaoJieShou.vue'], resolve),
+                        meta: {
+                            title: '智能调度台-报表接收'
+                        }
+                    },
+                    {
+                        path: 'baoBiaoXiaFa',
+                        name: '智能调度台-报表下发 ',
+                        component: resolve => require(['views/zhiNengDiaoDu/BaoBiaoXiaFa.vue'], resolve),
+                        meta: {
+                            title: '智能调度台-报表下发'
+                        }
+                    },
+                    {
+                        path: 'xiaFaBaoBiao',
+                        name: '智能调度台-下发报表',
+                        component: resolve => require(['views/zhiNengDiaoDu/XiaFaBaoBiao.vue'], resolve),
+                        meta: {
+                            title: '智能调度台-下发报表'
+                        }
+                    },
+                    {
+                        path: 'huiYiFaQi',
+                        name: '智能调度台-会议发起 ',
+                        component: resolve => require(['views/zhiNengDiaoDu/HuiYiFaQi.vue'], resolve),
+                        meta: {
+                            title: '智能调度台-会议发起'
+                        }
+                    },
+                    {
+                        path: 'huiYiJiaRu',
+                        name: '智能调度台-会议加入 ',
+                        component: resolve => require(['views/zhiNengDiaoDu/huiYiJiaRu.vue'], resolve),
+                        meta: {
+                            title: '智能调度台-会议加入'
+                        }
+                    },
+                ]
             }
         ]
     },

@@ -59,7 +59,7 @@
         background: #fff;
         padding: 0 20px;
         .news-list{
-            line-height: 50px;
+            line-height: 45px;
             cursor: pointer;
         }
     }

@@ -41,7 +41,10 @@
                     <el-menu-item index="/home/worktable" key="/home/worktable">网上讲习所</el-menu-item>
                     <el-menu-item index="/home/lunZhanJianGuan" key="/home/lunZhanJianGuan">轮战监管</el-menu-item>
                     <el-menu-item index="/home/labelView" key="/home/labelView">党建大数据</el-menu-item>
+                    <el-menu-item index="/home/zhiNeng" key="/home/zhiNeng">智能调度台</el-menu-item>
+                    <el-menu-item index="/home/eHome" key="/home/eHome">党群E家</el-menu-item>
                     <el-menu-item index="/home/renCaiZhiTong" key="/home/renCaiZhiTong">人才直通车</el-menu-item>
+
                 </el-menu>
             </el-header>
             <router-view></router-view>

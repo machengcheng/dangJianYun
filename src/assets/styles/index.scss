@@ -16,6 +16,15 @@ html, body {
 /*万能清除浮动法*/
 .clear1{zoom:1;height:auto!important}
 .clear1:after{content:"";clear:both;display:block;}
+hr{
+    margin-top:7px;
+    *margin: 0;
+    border: 0;
+    color: #979797;
+    background-color: #979797;
+    height: 1px;
+    opacity: 0.5;
+}
 
 div, ul, ol, li, img {
 	padding: 0;

@@ -19,7 +19,7 @@
                             v-model="form1.question">
                         </el-input>
                         <el-form-item class="mt20 ar">
-                            <el-button type="primary" @click="onSubmitFrom1">发送</el-button>
+                            <el-button type="primary" size="small" @click="onSubmitFrom1">发送</el-button>
                         </el-form-item>
                     </el-form>
                 </div>
@@ -33,7 +33,7 @@
                             v-model="form2.question">
                         </el-input>
                         <el-form-item class="mt20 ar">
-                            <el-button type="primary" @click="onSubmitFrom2">发送</el-button>
+                            <el-button type="primary" size="small" @click="onSubmitFrom2">发送</el-button>
                         </el-form-item>
                     </el-form>
                 </div>
@@ -104,7 +104,7 @@
         .help{
             margin-top: 40px;
             .el-button{
-                width: 160px;
+                width: 120px;
             }
         }
         .hlep-b{
